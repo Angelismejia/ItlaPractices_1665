@@ -3,19 +3,11 @@
 }
 
 <div class="container text-center">
-    <h1 class="display-4">Welcome, <span class="highlight">Candy</span>!</h1>
+    <h1 class="display-4">Welcome, <span class="highlight">Hello World</span>!</h1>
     
-    <h2>Explore the world of ASP.NET Core</h2>
-    
-    <p>
-        Learn about <a href="https://learn.microsoft.com/aspnet/core" target="_blank">building Web apps with ASP.NET Core</a>.
-    </p>
+    <h2>Explorando el mundo de ASP.NET Core</h2>
 
-    <p>
-        Go to the <a href="/Users">Users Page</a> to manage users.
-    </p>
-
-    <button class="btn btn-primary mt-4" onclick="showAlert()">Click Me</button>
+    <button class="btn btn-primary mt-4" onclick="redirectToUsers()">Haz clic aquí para dirigirte a usuarios</button>
 </div>
 
 <!-- Custom Styles -->
@@ -31,14 +23,14 @@
     }
 
     .btn:hover {
-        background-color: #0056b3; /* Color de fondo al pasar el mouse */
-        transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+        background-color: #0056b3; 
+        transform: scale(1.1); 
     }
 </style>
 
 <!-- Custom Script -->
 <script>
-    function showAlert() {
-        alert('Hello Candy! Welcome to ASP.NET Core.');
+    function redirectToUsers() {
+        window.location.href = 'https://localhost:7195/Usuarios'; // Redirige a la página de usuarios
     }
 </script>
