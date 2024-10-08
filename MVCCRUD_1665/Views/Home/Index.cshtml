@@ -1,8 +1,44 @@
-﻿@{
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container text-center">
+    <h1 class="display-4">Welcome, <span class="highlight">Candy</span>!</h1>
+    
+    <h2>Explore the world of ASP.NET Core</h2>
+    
+    <p>
+        Learn about <a href="https://learn.microsoft.com/aspnet/core" target="_blank">building Web apps with ASP.NET Core</a>.
+    </p>
+
+    <p>
+        Go to the <a href="/Users">Users Page</a> to manage users.
+    </p>
+
+    <button class="btn btn-primary mt-4" onclick="showAlert()">Click Me</button>
 </div>
+
+<!-- Custom Styles -->
+<style>
+    .highlight {
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    /* Estilo para el botón */
+    .btn {
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #0056b3; /* Color de fondo al pasar el mouse */
+        transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+    }
+</style>
+
+<!-- Custom Script -->
+<script>
+    function showAlert() {
+        alert('Hello Candy! Welcome to ASP.NET Core.');
+    }
+</script>
